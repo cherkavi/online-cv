@@ -1,9 +1,12 @@
-# Cache
+# cache
 _site/
 .sass-cache/
 .jekyll-metadata
 .jekyll-cache
+
+# editor
 vendor
 .vscode
 
+# data
 _data/data.yml
