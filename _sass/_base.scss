@@ -200,7 +200,25 @@ p {
     font-weight: 500;
     flex: 75%;
   }
-  .time,
+
+  .time{
+    position: relative;
+    right: 0;
+    top: 0;
+    color: $text-grey;
+    flex: 25%;
+    display: flex;
+    justify-content: right;
+  }
+  .company{
+    color: $text-grey;
+    font-weight: bold;
+  }
+  .time-company{
+    display: flex;
+    margin: 0px;
+  }
+
   .cert-url {
     position: absolute;
     right: 0;
@@ -208,7 +226,6 @@ p {
     color: $text-grey;
     flex: 25%;
   }
-  .company,
   .university,
   .cert-org {
     margin-bottom: 10px;
@@ -285,3 +302,12 @@ p {
   }
 }
 
+.cert-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.cert-element{
+    
+}
