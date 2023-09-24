@@ -98,7 +98,8 @@
 
     {% if sidebar.timezone %}
     <li class="timezone"><i class="fas fa-clock"></i>
-      {{ sidebar.timezone }}
+      <!-- CEST(UTC+2)-->
+      <a href="https://www.worldtimezone.com/utc/utc{{ sidebar.timezone }}00.html">UTC {{ sidebar.timezone }}</a>
     </li>
     {% endif %}
 
