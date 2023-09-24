@@ -1,0 +1,21 @@
+{% assign skills = site.data.data.sidebar.tech-skills %}
+{% if skills %}
+<div class="interests-container container-block">
+
+  <h2 class="container-block-title">
+    Tech Skills
+  </h2>
+
+  <ul class="list-unstyled interests-list">
+    {% for skill in skills %}
+        <li>
+            <h5 class="degree">{{ skill.title }}</h5>
+            {% for framework in skills.list %}
+              <div class="meta">{{ framework }}</div>
+            {% endfor %} <!-- // each framework -->
+        </li>
+    {% endfor %} <!-- // tech skills -->>
+  </ul>
+
+</div><!--//interests-->
+{% endif %}

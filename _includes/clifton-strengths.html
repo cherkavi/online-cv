@@ -1,0 +1,19 @@
+{% assign strenghts = site.data.data.sidebar.clifton-strengths %}
+{% if strenghts %}
+<div class="interests-container container-block">
+
+  <h2 class="cliftonstrenghts-title">
+    <a href="https://www.gallup.com/"><i>Clifton Strengths</i></a>
+  </h2>
+  {% if strenghts.id %}
+  <div class="cliftonstrenghts-id">{{ strenghts.id }}</div>
+  {% endif %}
+
+  <ol class="list-unstyled interests-list">
+    {% for each in strenghts.list %}
+      <li>{{ each }}</li>
+    {% endfor %}
+  </ol>
+
+</div>
+{% endif %}
