@@ -6,7 +6,14 @@
     <a href="https://www.gallup.com/"><i>Clifton Strengths</i></a>
   </h2>
   {% if strenghts.id %}
-  <div class="cliftonstrenghts-id">{{ strenghts.id }}</div>
+  <div class="cliftonstrenghts-id">
+    {% if strenghts.url %}
+        <a href="{{ strenghts.url }}" target="_blank">{{ strenghts.id }}</a>
+    {% else %}
+        {{ strenghts.id }}
+    {% endif %}
+
+  </div>
   {% endif %}
 
   <ol class="list-unstyled interests-list">
