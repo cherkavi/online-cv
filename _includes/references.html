@@ -1,0 +1,45 @@
+{% assign references = site.data.data.references %} {% if references and references.info.size > 0 %}
+<section class="section certifications-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ references.title }}
+  </h2>
+
+  <div class="cert-section">
+    <table class="reference-table">
+    {% for reference in references.info %}
+        <tr class="cert-element">
+            <td>
+                <div>{{ reference.organization }}</div>
+                <div>{{ reference.person }}</div>
+                <div>{{ reference.position }}</div>
+            </td>
+            <td>
+                {% if reference.email %}
+                <div><i class="fas fa-envelope"></i>{{ reference.email }}</div>
+                {% endif %}
+                {% if reference.phone %}
+                <div><i class="fas fa-phone"></i>{{ reference.phone }}</div>
+                {% endif %}
+                {% if reference.xing %}
+                <div><i class="fas fa-xing"></i>{{ reference.xing }}</div>
+                {% endif %}
+                {% if reference.linkedin %}
+                <div><i class="fas fa-linkedin"></i>{{ reference.linkedin }}</div>
+                {% endif %}
+                {% if reference.skype %}
+                <div><i class="fas fa-skype"></i>{{ reference.skype }}</div>
+                {% endif %}
+            </td>
+        </tr>
+    {% endfor %}  
+    </table>
+  </div>
+    
+ 
+</section>
+<!--//section-->
+{% endif %}

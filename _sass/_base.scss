@@ -343,3 +343,12 @@ p {
 .tech-skill-url {
     text-decoration: underline;
 }
+
+.reference-table{
+    width:100%; 
+    border-collapse: separate; 
+    border-spacing: 0 10px;
+    td {
+        padding-left: 10px
+    }
+}
