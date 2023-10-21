@@ -19,19 +19,19 @@
             </td>
             <td>
                 {% if reference.email %}
-                <div><i class="fas fa-envelope"></i>{{ reference.email }}</div>
+                <div><i class="fas fa-envelope">&nbsp;</i>{{ reference.email }}</div>
                 {% endif %}
                 {% if reference.phone %}
-                <div><i class="fas fa-phone"></i>{{ reference.phone }}</div>
+                <div><i class="fas fa-phone">&nbsp;</i>{{ reference.phone }}</div>
                 {% endif %}
                 {% if reference.xing %}
-                <div><i class="fas fa-xing"></i>{{ reference.xing }}</div>
+                <div><i class="fab fa-xing">&nbsp;</i><a href="https://www.xing.com/profile/{{ reference.xing }}" title="Xing" >{{ reference.xing }}</a></div>
                 {% endif %}
                 {% if reference.linkedin %}
-                <div><i class="fas fa-linkedin"></i>{{ reference.linkedin }}</div>
+                <div><i class="fab fa-linkedin">&nbsp;</i><a href="https://www.linkedin.com/in/{{ reference.linkedin }}/" title="LinkedIn">{{ reference.linkedin }}</a></div>
                 {% endif %}
                 {% if reference.skype %}
-                <div><i class="fas fa-skype"></i>{{ reference.skype }}</div>
+                <div><i class="fab fa-skype">&nbsp;</i>{{ reference.skype }}</div>
                 {% endif %}
             </td>
         </tr>
