@@ -1,0 +1,22 @@
+{% assign working_models = site.data.data.sidebar.working_models %}
+{% if working_models %}
+<div class="interests-container container-block">
+
+  <h2 class="container-block-title">
+    {{ working_models.title }}
+  </h2>
+
+  <ul class="list-unstyled interests-list">
+    {% for model in working_models.info %}
+
+      {% if model.link %}
+      <li><a href="{{ model.link }}">{{ model.item }}</a></li>
+      {% else %}
+      <li>{{ model.item }}</li>
+      {% endif %}
+
+    {% endfor %}
+  </ul>
+
+</div><!--//working models-->
+{% endif %}
