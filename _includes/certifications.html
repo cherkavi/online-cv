@@ -11,10 +11,10 @@
   <div class="cert-section">
     {% for certification in certifications.list %}
       <span class="cert-element">
-        <a href="{{ certification.credentialurl }}" 
+        <span href="{{ certification.credentialurl }}" 
            target="_blank" 
            title="{{ certification.organization }} : {{ certification.start }} {% if certification.end %} - {{certification.end }} {% endif %}"
-           > {{ certification.name }} &nbsp; &nbsp;</a>
+           > {{ certification.name }} &nbsp; &nbsp;</span>
 <!--        
         <span class="tooltiptext">
           <div class="details">{{ certification.details | markdownify }}</div>  

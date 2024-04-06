@@ -3,12 +3,12 @@
 <div class="interests-container container-block">
 
   <h2 class="cliftonstrenghts-title">
-    <a href="https://www.gallup.com/"><i>Clifton Strengths</i></a>
+    <span href="https://www.gallup.com/"><i>Clifton Strengths</i></span>
   </h2>
   {% if strenghts.id %}
   <div class="cliftonstrenghts-id">
     {% if strenghts.url %}
-        <a href="{{ strenghts.url }}" target="_blank">{{ strenghts.id }}</a>
+        <span href="{{ strenghts.url }}" target="_blank">{{ strenghts.id }}</span>
     {% else %}
         {{ strenghts.id }}
     {% endif %}

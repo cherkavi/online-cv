@@ -10,7 +10,7 @@
     {% for model in working_models.info %}
 
       {% if model.link %}
-      <li><a href="{{ model.link }}">{{ model.item }}</a></li>
+      <li><span href="{{ model.link }}">{{ model.item }}</span></li>
       {% else %}
       <li>{{ model.item }}</li>
       {% endif %}

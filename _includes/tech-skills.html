@@ -10,7 +10,7 @@
     {% for skill in skills %}
         <li>
             {% if skill.url %}
-            <h5 class="soft-skill-title"><a href="{{ skill.url }}" class="tech-skill-url">&bull;{{ skill.title }}: </a></h5>
+            <h5 class="soft-skill-title"><span href="{{ skill.url }}" class="tech-skill-url">&bull;{{ skill.title }}: </span></h5>
             {% else %}
             <h5 class="soft-skill-title">&bull;{{ skill.title }}: </h5>
             {% endif %}
@@ -20,7 +20,7 @@
             {% for framework in skill.list %}
                 {% assign framework_counter = framework_counter | plus: 1 %}
                 <span class="meta">
-                    {% if framework.url %}<a href="{{ framework.url }}" class="tech-skill-url">{{ framework.name }}</a>{% else %}<span>{{ framework }}</span>{% endif %}{% if framework_counter != framework_size %}&comma;{% endif %}
+                    {% if framework.url %}<span href="{{ framework.url }}" class="tech-skill-url">{{ framework.name }}</span>{% else %}<span>{{ framework }}</span>{% endif %}{% if framework_counter != framework_size %}&comma;{% endif %}
                 </span>
             {% endfor %} <!-- // each framework -->
         </li>

@@ -21,7 +21,7 @@
 
     <span class="project-title">
       {% if contribution.link %}
-      <a href="{{ contribution.link }}" target="_blank">{{ contribution.title }}</a>
+      <span href="{{ contribution.link }}" target="_blank">{{ contribution.title }}</span>
       {% else %}
       {{ contribution.title }}
       {% endif %}
