@@ -15,16 +15,5 @@ jQuery(document).ready(function($) {
         });
 
     });
-   
-    
-
 });
 
-// Hide URLs during print preview
-(function() {
-    var links = document.getElementsByTagName('a');
-    for (var i = 0; i < links.length; i++) {
-        links[i].setAttribute('data-href', links[i].getAttribute('href'));
-        links[i].removeAttribute('href');
-    }
-})();
