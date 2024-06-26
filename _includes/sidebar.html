@@ -27,7 +27,9 @@
 
   {% include soft-skills.html %}
 
-  {% include clifton-strengths.html %}
+  {% if sidebar.clifton %}
+    {% include clifton-strengths.html %}
+  {% endif %}
 
   {% include tech-skills.html %}
 

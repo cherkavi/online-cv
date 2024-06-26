@@ -10,9 +10,9 @@
     {% for skill in skills %}
         <li>
             {% if skill.url %}
-            <h5 class="soft-skill-title"><span href="{{ skill.url }}" class="tech-skill-url">&bull;{{ skill.title }}: </span></h5>
+            <h5 class="soft-skill-title">&bull;&nbsp;<span href="{{ skill.url }}" class="tech-skill-url">{{ skill.title }}: </span></h5>
             {% else %}
-            <h5 class="soft-skill-title">&bull;{{ skill.title }}: </h5>
+            <h5 class="soft-skill-title">&bull;&nbsp;{{ skill.title }}: </h5>
             {% endif %}
 
             {% assign framework_size = skill.list | size  %}

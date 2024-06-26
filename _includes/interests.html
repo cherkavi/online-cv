@@ -10,9 +10,9 @@
     {% for interest in interests.info %}
 
       {% if interest.link %}
-      <li><span href="{{ interest.link }}">{{ interest.item }}</span></li>
+        <li>&bull;&nbsp;<span href="{{ interest.link }}">{{ interest.item }}</span></li>
       {% else %}
-      <li>{{ interest.item }}</li>
+        <li>&bull;&nbsp;{{ interest.item }}</li>
       {% endif %}
 
     {% endfor %}

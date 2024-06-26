@@ -8,11 +8,11 @@
 
   <ul class="list-unstyled interests-list">
     {% for skill in skills %}
-        <li>{{ skill }}</li>
+        <li>&bull;&nbsp; {{ skill }}</li>
       {% if interest.link %}
-      <li><span href="{{ interest.link }}">{{ interest.item }}</span></li>
+        <li>&bull;&nbsp; <span href="{{ interest.link }}">{{ interest.item }}</span></li>
       {% else %}
-      <li>{{ interest.item }}</li>
+        <li>{{ interest.item }}</li>
       {% endif %}
 
     {% endfor %}
