@@ -1,9 +1,16 @@
 /* ======= Base ======= */
+:root {
+    --fontsize1: 20px;
+    --fontsize2: 30px;
+    --fontsize3: 18px;
+    --fontsize4: 16px;
+    --fontsize5: 14px;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: $text-color-secondary;
   background: $smoky-white;
-  font-size: 14px;
+  font-size: var(--fontsize1);                           // anchor: 2 text font
   // padding: 30px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,6 +24,15 @@ h5,
 h6 {
   font-weight: 700;
 }
+
+.h5 {
+    font-size: var(--fontsize4);
+  }
+  h6,
+  .h6 {
+    font-size: var(--fontsize5);
+  }
+  
 
 a {
   color: darken($theme-color, 15%);
@@ -35,7 +51,7 @@ p {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(15, 1fr);  // anchor1
+  grid-template-columns: repeat(15, 1fr);  // anchor: 1 page layout
   background: $theme-color;
   max-width: 1400px;
   margin: 0 auto;
@@ -44,7 +60,7 @@ p {
 }
 
 .sidebar-wrapper {
-  grid-column: span 4;                     // anchor1
+  grid-column: span 4;                     // anchor: 1 page layout
   order: $sidebar-order;
   background: $theme-color;
   color: #fff;
@@ -59,14 +75,14 @@ p {
     color: #fff;
   }
   .name {
-    font-size: 24px;
+    font-size: var(--fontsize2);           // anchor: 2 font size
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 10px;
   }
   .tagline {
     color: rgba(256, 256, 256, 0.6);
-    font-size: 16px;
+    font-size: var(--fontsize1);          // anchor: 2 font size
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
@@ -103,13 +119,13 @@ p {
   }
   .container-block-title {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: var(--fontsize1);
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 2px;
   }
   .degree {
-    font-size: 14px;
+    font-size: var(--fontsize3);
     margin-top: 0;
     margin-bottom: 5px;
   }
@@ -160,13 +176,13 @@ p {
 }
 
 .main-wrapper {
-  grid-column: span 11;           // anchor1
+  grid-column: span 11;           // anchor: 1 page layout
   order: $resume-order;
   background: #fff;
   padding: 30px;
   .section-title {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: var(--fontsize2);
     font-weight: 500;
     color: darken($theme-color, 15%);
     position: relative;
@@ -194,7 +210,7 @@ p {
   .degree,
   .cert-title{
     color: $text-color;
-    font-size: 16px;
+    font-size: var(--fontsize1);
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 500;
@@ -233,7 +249,7 @@ p {
   }
 
   .project-title {
-    font-size: 16px;
+    font-size: var(--fontsize1);
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 5px;
@@ -249,7 +265,7 @@ p {
   }
 
   .publication-title {
-    font-size: 16px;
+    font-size: var(--fontsize1);
     font-weight: 400;
     color: $text-color;
     margin-bottom: 1px;
@@ -275,7 +291,7 @@ p {
     overflow: hidden;
   }
   .level-title {
-    font-size: 14px;
+    font-size: var(--fontsize4);
     margin-top: 0;
     margin-bottom: 12px;
   }
@@ -294,7 +310,7 @@ p {
   .copyright {
     line-height: 1.6;
     color: $text-color-secondary;
-    font-size: 13px;
+    font-size: var(--fontsize4);
   }
 
   .fa-heart {
@@ -309,7 +325,7 @@ p {
 }
 
 .cliftonstrenghts-title{ 
-    font-size: 16px;
+    font-size: var(--fontsize1);
     font-weight: 700;
     text-transform: uppercase;
 
@@ -325,7 +341,7 @@ p {
 
 .soft-skill-title {
     display: inline;
-    font-size: 14px;
+    font-size: var(--fontsize3);
     margin-top: 0;
     margin-bottom: 5px;
 }
