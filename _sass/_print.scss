@@ -3,6 +3,15 @@
         size: landscape;
         // page-orientation: rotate-left;
     }
+    body {
+        font-size: 10pt;
+        --fontsize1: 18px;
+        --fontsize2: 16px;
+        --fontsize3: 14px;
+        --fontsize4: 12px;
+        --fontsize5: 12px;
+    }
+
     .sidebar-wrapper {
         position: static;
         float: left;
@@ -28,6 +37,7 @@
      img.avatar {
         display: none;
      }
+
 
 }
 
